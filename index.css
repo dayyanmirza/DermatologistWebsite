@@ -1,0 +1,47 @@
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+
+.home-main-section .img-wrapper{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.home-main-section .hero-image {
+    box-sizing: border-box;
+    background: url(images/Hero-Image.png);
+    flex-grow: 1;
+    max-height: calc(100vh - 50px);
+    min-width: 30vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+    border: 5px solid rgba(192, 192, 192, 0.25); 
+    overflow: hidden;
+}
+
+.home-main-section .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+/* This is so that if the screen is minimised the image is removed. */
+@media (max-width: 900px) {
+    .home-main-section .img-wrapper {
+        display: none;
+    }
+
+    .home-main-section {
+        justify-content: center;
+    }
+}

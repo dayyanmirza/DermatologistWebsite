@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+*, html {
+    scroll-behavior: auto !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.full-height-grow {
+    background: linear-gradient(180deg, #61AAEE 0%, rgba(97, 170, 238, 0) 100%);
+    flex: auto;
+}
+
+.romana-logo {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    margin-left: 30%;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 10%;
+    margin-left: 60%;
+    color: rgba(0, 0, 0, 0.53);
+}
+
+h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+h2 {
+    margin-left: 27px;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+/* Adds a line before the About part. */
+h2:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    top: 65px;
+    left: -27px;
+    background-color: rgba(0, 0, 0, 0.54);
+}
+
+.about-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-bottom: 20vh;
+}
+
+.about-main-section .img-wrapper{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.about-main-section .profile-image {
+    box-sizing: border-box;
+    background: url(images/profile-img.jpg);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+    border: 5px solid rgba(192, 192, 192, 0.25); 
+    overflow: hidden;
+}
+
+.about-main-section p {
+    flex-grow: 1;
+    padding-top: 20vh;
+    padding-left: 5vw;
+    margin: 0;
+}
+
+/* This is so that if the screen is minimised the image is removed. */
+@media (max-width: 900px) {
+    .about-main-section .img-wrapper {
+        display: none;
+    }
+
+    .about-main-section {
+        justify-content: center;
+    }
+}
